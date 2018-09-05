@@ -1,0 +1,16 @@
+<ol>
+  <li *ngFor="let t of tweets">
+    <div><strong>Texto:</strong> {{t.texto}}<br/>
+      <strong>Data:</strong> {{t.dataCriacao}}<br/>
+      <strong>Hashtags:</strong> {{t.hashtags}}<br/>
+      <strong>Usuario:</strong><br /></div>
+    <div style="padding-left:1em">
+      <strong>- Nome:</strong> {{t.usuario.nome}} <br/>
+      <strong>- Seguidores:</strong> {{t.usuario.numeroSeguidores}} <br/>
+      <strong>- Idioma:</strong> {{t.usuario.idioma}} <br/>
+      <strong>- Localizacao:</strong> {{t.usuario.localizacao}}
+    </div>
+    <br/>
+    <br>
+  </li>
+</ol>
